@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seventh OS — toutes les applis se7en</title>
+<meta name="description" content="Seventh OS installe, ouvre et met à jour toutes les applis se7en en un clic : voix, clips TikTok, téléchargement, manette PS5, autoclic… Gratuit, pour Windows 10 et 11.">
+<meta name="theme-color" content="#0B0D0E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Seventh OS — toutes les applis se7en">
+<meta property="og:description" content="Une seule appli pour installer et mettre à jour tous les logiciels se7en. Gratuit, pour Windows.">
+<meta property="og:image" content="/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/assets/icons/seventh-os.png">
+<link rel="preload" href="/assets/fonts/Anton-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <img src="/assets/icons/seventh-os.png" alt="" width="32" height="32">
+    <b>SEVENTH <i>OS</i></b>
+  </a>
+  <nav class="links">
+    <a href="#applis">Les applis</a>
+    <a href="#comment">Comment ça marche</a>
+    <a href="#faq">Questions</a>
+  </nav>
+  <a class="btn small dl-link" href="/download">Télécharger</a>
+</header>
+
+<main id="top">
+  <!-- ------------------------------------------------ hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="dot"></span> Gratuit · Windows 10 et 11</p>
+      <h1>SEVENTH <i>OS</i></h1>
+      <p class="punch">Tous tes logiciels se7en.<br>Une seule appli pour les gérer.</p>
+      <p class="lead">Installe, ouvre et mets à jour <b data-count>7</b> applis pour créer, streamer et jouer, en un clic. Plus de liens à chercher, plus de versions à suivre.</p>
+      <div class="cta">
+        <a class="btn primary big dl-link" href="/download">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 5.1 10.4 4v7.1H3V5.1Zm0 13.8 7.4 1.1v-7H3v5.9Zm8.3 1.2L21 21.5v-8.4h-9.7v7Zm0-16.2v7.2H21V2.5l-9.7 1.4Z"/></svg>
+          Télécharger pour Windows
+        </a>
+        <span class="dl-meta" data-dlmeta>Dernière version · ~110 Mo</span>
+      </div>
+    </div>
+
+    <!-- maquette du hub -->
+    <div class="mock" aria-hidden="true">
+      <div class="mock-win">
+        <div class="mock-bar"><span></span><span></span><span></span></div>
+        <div class="mock-body">
+          <div class="mock-top">
+            <div class="mock-brand"><img src="/assets/icons/seventh-os.png" alt=""><b>SEVENTH <i>OS</i></b></div>
+            <div class="mock-status"><span></span>Connecté</div>
+          </div>
+          <div class="mock-h">TES APPLIS</div>
+          <div class="mock-grid" id="mock-grid"></div>
+        </div>
+      </div>
+      <div class="mock-glow"></div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------ bandeau -->
+  <section class="strip" aria-label="En bref">
+    <div><b>1 clic</b><span>pour installer</span></div>
+    <div><b>Auto</b><span>mises à jour proposées</span></div>
+    <div><b>0 €</b><span>sans abonnement</span></div>
+    <div><b>100 %</b><span>sur ton PC</span></div>
+  </section>
+
+  <!-- ------------------------------------------------ applis -->
+  <section class="section" id="applis">
+    <div class="section-head">
+      <p class="kicker">Le catalogue</p>
+      <h2><span data-count>7</span> applis. Et ça continue.</h2>
+      <p class="sub">Chaque nouvelle appli se7en arrive directement dans Seventh OS, sans rien retélécharger.</p>
+    </div>
+    <div class="apps" id="apps"></div>
+  </section>
+
+  <!-- ------------------------------------------------ comment -->
+  <section class="section" id="comment">
+    <div class="section-head">
+      <p class="kicker">Comment ça marche</p>
+      <h2>Prêt en trois étapes.</h2>
+    </div>
+    <ol class="steps">
+      <li class="glass">
+        <span class="num">01</span>
+        <h3>Télécharge</h3>
+        <p>Lance <code>SeventhOS-Setup.exe</code> : l'installation prend quelques secondes.</p>
+      </li>
+      <li class="glass">
+        <span class="num">02</span>
+        <h3>Entre ton code</h3>
+        <p>Au premier lancement, ton code d'accès. Il n'est demandé qu'une fois.</p>
+      </li>
+      <li class="glass">
+        <span class="num">03</span>
+        <h3>Installe tes applis</h3>
+        <p>Un clic sur <b>Installer</b>. Ensuite, Seventh OS te prévient à chaque mise à jour.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ------------------------------------------------ pourquoi -->
+  <section class="section">
+    <div class="section-head">
+      <p class="kicker">Pourquoi Seventh OS</p>
+      <h2>Le magasin d'applis de la team.</h2>
+    </div>
+    <div class="perks">
+      <div class="perk glass"><span class="ico">⬇</span><h3>Installer, ouvrir</h3><p>Toutes les applis au même endroit, avec leur fiche, leurs nouveautés et un bouton pour les lancer.</p></div>
+      <div class="perk glass"><span class="ico">⟳</span><h3>Toujours à jour</h3><p>Une nouvelle version sort ? Seventh OS te la propose. « Tout mettre à jour » s'occupe du reste.</p></div>
+      <div class="perk glass"><span class="ico">✦</span><h3>Rien de perdu</h3><p>Tes réglages, presets, macros et projets sont gardés à chaque mise à jour.</p></div>
+      <div class="perk glass"><span class="ico">✕</span><h3>Désinstaller proprement</h3><p>Une appli ne te sert plus ? Elle part en un clic, sans laisser de fichiers qui traînent.</p></div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------ FAQ -->
+  <section class="section" id="faq">
+    <div class="section-head">
+      <p class="kicker">Questions</p>
+      <h2>Avant de te lancer.</h2>
+    </div>
+    <div class="faq">
+      <details class="glass">
+        <summary>Windows affiche « Windows a protégé votre ordinateur »</summary>
+        <p>C'est normal pour un logiciel indépendant qui n'a pas encore de certificat payant. Clique sur <b>Informations complémentaires</b>, puis <b>Exécuter quand même</b>. Le fichier vient directement des releases GitHub de se7en.</p>
+      </details>
+      <details class="glass">
+        <summary>Où trouver le code d'accès ?</summary>
+        <p>Seventh OS est réservé à la team : demande ton code à la personne qui t'a envoyé ce lien. Tu ne l'entres qu'une fois, il reste ensuite protégé par Windows sur ton PC.</p>
+      </details>
+      <details class="glass">
+        <summary>C'est vraiment gratuit ?</summary>
+        <p>Oui. Pas d'abonnement, pas de pub. Les applis qui utilisent l'IA la font tourner sur ton propre PC.</p>
+      </details>
+      <details class="glass">
+        <summary>Il me faut quel PC ?</summary>
+        <p>Windows 10 ou 11, 64 bits. Certaines applis demandent plus : se7en Clip conseille une carte graphique, se7en IA a besoin d'After Effects. Chaque fiche dit ce qu'il faut.</p>
+      </details>
+      <details class="glass">
+        <summary>Et sur Mac ou sur téléphone ?</summary>
+        <p>Seventh OS et les applis tournent sur Windows. se7en Vision se pilote depuis ton téléphone, mais s'installe sur le PC.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------ CTA final -->
+  <section class="final glass">
+    <img src="/assets/icons/seventh-os.png" alt="" width="88" height="88">
+    <h2>Toutes tes applis.<br><i>Un seul endroit.</i></h2>
+    <a class="btn primary big dl-link" href="/download">Télécharger Seventh OS</a>
+    <span class="dl-meta" data-dlmeta>Dernière version · ~110 Mo</span>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="year">2026</span> se7en</span>
+  <a href="https://github.com/se7enclaude/seventh-os/releases" target="_blank" rel="noopener">Toutes les versions</a>
+</footer>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
