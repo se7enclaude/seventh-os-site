@@ -1,6 +1,6 @@
 # Seventh OS — site
 
-Le site de téléchargement de Seventh OS, hébergé gratuitement sur Cloudflare Pages.
+Le site de téléchargement de Seventh OS, hébergé gratuitement sur Cloudflare Pages : **https://seventh-os.pages.dev**
 
 - `public/` : la page (HTML, CSS, JS), les polices et les icônes.
 - `functions/download.js` : `/download` redirige vers l'installateur de la dernière release de `se7enclaude/seventh-os`.
