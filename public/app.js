@@ -10,6 +10,7 @@ const FALLBACK = [
   { id: 'se7en-dualsense', name: 'se7en DualSense', subtitle: 'Ta manette PS5 sur PC', accent: '#D7F23A', tagline: 'Ta DualSense dans tous tes jeux PC.' },
   { id: 'se7en-autoclick', name: 'se7en Autoclick', subtitle: 'Autoclic · Macros', accent: '#3DFF8C', tagline: 'Clique et rejoue tes gestes en boucle pour farmer.' },
   { id: 'se7en-vision', name: 'se7en Vision', subtitle: 'Ton PC depuis ton iPhone', accent: '#7A64F0', tagline: 'Contrôle ton PC depuis ton téléphone, où que tu sois.' },
+  { id: 'se7en-censored', name: 'se7en Censored', subtitle: 'Floutage auto · Twitch', accent: '#F28B96', tagline: "Floute tout seul les parties intimes d'un film, uniquement là où il faut." },
   { id: 'se7en-ia', name: 'se7en IA', subtitle: 'se7en studio · After Effects', accent: '#E9A19A', tagline: "Tes edits d'anime dans After Effects, en un clic." },
 ];
 
