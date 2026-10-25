@@ -15,6 +15,7 @@ Le site de téléchargement de Seventh OS, hébergé gratuitement sur Cloudflare
 ```
 npm install
 npm run dev        aperçu sur http://localhost:8788 (avec /download et /api/latest)
+npm run sync       après un ajout dans Seventh OS : icônes, fiches de secours, nombre d'applis, image de partage
 npm run deploy     mise en ligne sur Cloudflare Pages (projet « seventh-os »)
 ```
 

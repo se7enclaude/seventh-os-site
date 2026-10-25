@@ -1,11 +1,13 @@
-# Image de partage (Discord, X, WhatsApp…) : public/assets/og.png, 1200 x 630.
+# Image de partage (Discord, X, WhatsApp…) : public/assets/og.png, 1200 x 630, avec l'icône de chaque appli du catalogue.
+import json
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 A = ROOT / "public" / "assets"
 W, H = 1200, 630
-APPS = ["se7en-voice", "se7en-clip", "se7en-download", "se7en-dualsense", "se7en-autoclick", "se7en-vision", "se7en-ia"]
+CATALOG = ROOT.parent / "Seventh OS" / "apps.json"
+APPS = [a["id"] for a in json.loads(CATALOG.read_text("utf-8"))["apps"]] if CATALOG.exists() else     sorted(p.stem for p in (A / "icons").glob("se7en-*.png"))
 
 
 def glow(img, xy, r, color, alpha):
@@ -44,12 +46,14 @@ w = d.textlength("SEVENTH ", font=big)
 d.text((80 + w, 236), "OS", font=big, fill=(241, 185, 178))
 d.text((84, 430), "Tous tes logiciels se7en. Une seule appli.", font=manrope, fill=(255, 255, 255, 220))
 
+# rangée d'icônes : 72 px, plus petites si le catalogue grandit (tout tient entre les marges)
+shown = [a for a in APPS if (A / "icons" / f"{a}.png").exists()]
+gap = 16
+size = int(min(72, (W - 2 * 84 - gap * (len(shown) - 1)) / max(1, len(shown))))
 x = 84
-for app in APPS:
-    p = A / "icons" / f"{app}.png"
-    if p.exists():
-        img.alpha_composite(rounded(Image.open(p), 72, 18), (x, 510))
-        x += 88
+for app in shown:
+    img.alpha_composite(rounded(Image.open(A / "icons" / f"{app}.png"), size, int(size / 4)), (x, 510 + (72 - size) // 2))
+    x += size + gap
 
 img.convert("RGB").save(A / "og.png", optimize=True)
 print("ok", A / "og.png")
