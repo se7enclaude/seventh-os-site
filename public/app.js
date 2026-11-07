@@ -14,6 +14,7 @@ const FALLBACK = [
   { id: "se7en-censored", name: "se7en Censored", subtitle: "Floutage auto · Twitch", accent: "#F28B96", tagline: "Floute tout seul les parties intimes d'un film, uniquement là où il faut." },
   { id: "se7en-iptv-player", name: "se7en IPTV Player", subtitle: "Lecteur IPTV", accent: "#EE2E37", tagline: "Ton abonnement Xtream Codes ou ta liste M3U, en grand, avec le guide des programmes." },
   { id: "se7en-source", name: "se7en Source", subtitle: "Entrées d'écran · PC ↔ console", accent: "#1FD6DD", tagline: "Passe ton écran du PC à ta PS5 en un clic, sans toucher à ses boutons." },
+  { id: "se7en-browser", name: "se7en Browser", subtitle: "Navigateur · IA locale", accent: "#C9CED8", tagline: "Un navigateur en verre, avec une IA qui tourne sur ton PC." },
 ];
 
 const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
